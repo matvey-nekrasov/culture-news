@@ -1,0 +1,157 @@
+/* globals */
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+
+    font-family: 'Roboto', Arial, sans-serif;
+    color: black;
+
+    background-color: white;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* container */
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    /* box-shadow: 0 0 2px red inset; */
+}
+
+
+/* logo */
+
+.logo {
+    margin: 0;
+    text-align: center;
+}
+
+.logo__link {
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+/* menu */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.menu__item {
+    margin: 5px 0;
+}
+
+.menu__link {
+    padding: 5px 0;
+
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* description */
+
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+
+/* header */
+
+.header__logo {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.header__menu {
+    padding-bottom: 40px;
+}
+
+
+/* headline */
+
+.headline {
+    text-align: center;
+
+    background: #07080D url(../img/underwater-hotel.jpg) no-repeat center;
+    box-shadow: 0 0 2px red inset;
+}
+
+.headline__title {
+    position: relative;
+
+    margin: 0;
+    padding-top: 135px;
+    padding-bottom: 130px;
+}
+
+.headline__title::before {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    background-image: url("../img/UnderewaterHotelIcon.svg");
+}
+
+.headline__title-link {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    /* background-color: black; */
+}
+
+.headline__description {
+    margin: 0 auto;
+    width: 456px;
+    padding-bottom: 45px;
+
+    color: #ffffff;
+}
