@@ -37,7 +37,7 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding: 0 15px;
 
-    /* box-shadow: 0 0 2px red inset; */
+    box-shadow: 0 0 2px red inset;
 }
 
 
@@ -86,14 +86,65 @@ input[type="radio"].visually-hidden {
 }
 
 
+/* section-heading */
+
+.section-heading {
+    margin: 0;
+
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* inner-heading */
+
+.inner-heading {
+    margin: 0;
+
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    font-weight: 900;
+}
+
+
 /* description */
 
 .description {
+    margin: 0;
+
     font-size: 14px;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 21px;
+
+    text-align: center;
 }
 
+
+/* button */
+
+.button {
+    display: block;
+    width: 170px;
+    margin: 0 auto;
+    padding: 16px 0;
+
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #ff7931;
+}
+
+
+/* --------- index.html --------- */
 
 /* header */
 
@@ -113,7 +164,6 @@ input[type="radio"].visually-hidden {
     text-align: center;
 
     background: #07080D url(../img/underwater-hotel.jpg) no-repeat center;
-    box-shadow: 0 0 2px red inset;
 }
 
 .headline__title {
@@ -154,4 +204,101 @@ input[type="radio"].visually-hidden {
     padding-bottom: 45px;
 
     color: #ffffff;
+    line-height: 23px;
 }
+
+
+/* reviews */
+
+.reviews {
+    text-align: center;
+}
+
+.reviews__section-heading {
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.reviews__list {
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.reviews__item {
+    width: 370px;
+}
+
+.reviews__inner-heading {
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    text-align: start;
+}
+
+.reviews__link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.reviews__link:hover,
+.reviews__link:focus {
+    color: #ff7931;
+}
+
+.reviews__description {
+    text-align: start;
+}
+
+
+/* promo */
+
+.promo {
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.promo__section-heading {
+    padding-top: 85px;
+    padding-bottom: 35px;
+}
+
+.promo__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.promo__item {
+    margin: 0 auto;
+
+    width: 370px;
+}
+
+.promo__description {
+    position: relative;
+
+    padding-top: 10px;
+    padding-bottom: 45px;
+}
+
+.promo__description::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+
+    width: 100px;
+    height: 2px;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
+}
+
