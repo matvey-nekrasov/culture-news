@@ -1,5 +1,6 @@
 /* ------------------------ blocks ------------------------ */
 
+
 /* globals */
 
 body {
@@ -178,11 +179,12 @@ input[type="radio"].visually-hidden {
     transform: translateY(-50%);
     right: var(--side-padding);
 
-    content: url("../img/arrow-left.svg");
+    content: url("../img/arrow-right.svg");
 }
 
 
 /* social-list */
+
 .social-list {
     display: flex;
     flex-wrap: wrap;
@@ -207,15 +209,15 @@ input[type="radio"].visually-hidden {
 }
 
 .social-list__link--instagram {
-    background-image: url("/img/instagram_icon.svg");
+    background-image: url("../img/instagram_icon.svg");
 }
 
 .social-list__link--facebook {
-    background-image: url("/img/facebook_icon.svg");
+    background-image: url("../img/facebook_icon.svg");
 }
 
 .social-list__link--twitter {
-    background-image: url("/img/twitter_icon.svg");
+    background-image: url("../img/twitter_icon.svg");
 }
 
 
@@ -269,8 +271,6 @@ input[type="radio"].visually-hidden {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-
-    /* background-color: black; */
 }
 
 .headline__description {
@@ -376,6 +376,10 @@ input[type="radio"].visually-hidden {
 
     border: 1px solid rgba(0, 0, 0, 0.2);
     opacity: 0.4;
+}
+
+.promo__description--last::after {
+    content: none;
 }
 
 .promo__button-see-container {
