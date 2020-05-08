@@ -1,3 +1,5 @@
+/* ------------------------ blocks ------------------------ */
+
 /* globals */
 
 body {
@@ -36,8 +38,11 @@ input[type="radio"].visually-hidden {
     width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+}
 
-    box-shadow: 0 0 2px red inset;
+.container--bg-circle {
+    --grad-perc: 54%;
+    background-image: radial-gradient(closest-corner circle, white var(--grad-perc), #f7f7f7 var(--grad-perc));
 }
 
 
@@ -55,6 +60,11 @@ input[type="radio"].visually-hidden {
     font-weight: 900;
     letter-spacing: 1px;
     text-decoration: none;
+}
+
+.logo__link--footer {
+    color: #ffffff;
+    font-size: 28px;
 }
 
 
@@ -83,6 +93,15 @@ input[type="radio"].visually-hidden {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.menu__link--footer {
+    color: #ffffff;
+}
+
+.menu--border-bottom {
+    border-bottom: 2px rgba(255, 255, 255, 0.4) solid;
+    margin-bottom: 45px;
 }
 
 
@@ -127,10 +146,13 @@ input[type="radio"].visually-hidden {
 /* button */
 
 .button {
+    position: relative;
+
     display: block;
     width: 170px;
     margin: 0 auto;
-    padding: 16px 0;
+    box-sizing: border-box;
+    padding: 16px;
 
     color: #ffffff;
     font-size: 12px;
@@ -143,8 +165,61 @@ input[type="radio"].visually-hidden {
     background-color: #ff7931;
 }
 
+.button--arrow-right {
+    --side-padding: 30px;
+    padding-left: var(--side-padding);
 
-/* --------- index.html --------- */
+    text-align: start;
+}
+
+.button--arrow-right::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: var(--side-padding);
+
+    content: url("../img/arrow-left.svg");
+}
+
+
+/* social-list */
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    width: 170px;
+
+    list-style: none;
+}
+
+.social-list__item {
+    display: flex;
+    width: 47px;
+    height: 47px;
+    background-color: #ffffff;
+}
+
+.social-list__link {
+    flex-grow: 1;
+    background: no-repeat center;
+}
+
+.social-list__link--instagram {
+    background-image: url("/img/instagram_icon.svg");
+}
+
+.social-list__link--facebook {
+    background-image: url("/img/facebook_icon.svg");
+}
+
+.social-list__link--twitter {
+    background-image: url("/img/twitter_icon.svg");
+}
+
+
+/* ------------------------ index.html ------------------------ */
 
 /* header */
 
@@ -163,7 +238,7 @@ input[type="radio"].visually-hidden {
 .headline {
     text-align: center;
 
-    background: #07080D url(../img/underwater-hotel.jpg) no-repeat center;
+    background: #07080D url("../img/underwater-hotel.jpg") no-repeat center;
 }
 
 .headline__title {
@@ -184,7 +259,7 @@ input[type="radio"].visually-hidden {
     width: 55px;
     height: 55px;
 
-    background-image: url("../img/UnderewaterHotelIcon.svg");
+    background-image: url("../img/underwater-hotel-icon.svg");
 }
 
 .headline__title-link {
@@ -225,6 +300,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    padding-bottom: 55px;
 
     list-style: none;
 }
@@ -263,7 +339,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo__section-heading {
-    padding-top: 85px;
+    padding-top: 30px;
     padding-bottom: 35px;
 }
 
@@ -302,3 +378,29 @@ input[type="radio"].visually-hidden {
     opacity: 0.4;
 }
 
+.promo__button-see-container {
+    margin: 0;
+    padding-bottom: 35px;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #575757;
+
+    margin-top: 50px;
+}
+
+.footer__logo {
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.footer__menu {
+    padding-bottom: 40px;
+}
+
+.footer__social-list {
+    padding-bottom: 45px;
+}
