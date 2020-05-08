@@ -36,7 +36,7 @@ input[type="radio"].visually-hidden {
 /* container */
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -94,6 +94,15 @@ input[type="radio"].visually-hidden {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+    color: #ff7931;
+}
+
+.menu__link:active {
+    opacity: 0.7;
 }
 
 .menu__link--footer {
@@ -166,6 +175,15 @@ input[type="radio"].visually-hidden {
     background-color: #ff7931;
 }
 
+.button:hover,
+.button:focus {
+    opacity: 0.85;
+}
+
+.button:active {
+    opacity: 0.7;
+}
+
 .button--arrow-right {
     --side-padding: 30px;
     padding-left: var(--side-padding);
@@ -196,17 +214,24 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.social-list__item {
-    display: flex;
+.social-list__link {
+    display: block;
     width: 47px;
     height: 47px;
+
+    background: no-repeat center;
     background-color: #ffffff;
 }
 
-.social-list__link {
-    flex-grow: 1;
-    background: no-repeat center;
+.social-list__link:hover,
+.social-list__link:focus {
+    background-color: #ff7931;
 }
+
+.social-list__link:active {
+    opacity: 0.7;
+}
+
 
 .social-list__link--instagram {
     background-image: url("../img/instagram_icon.svg");
@@ -271,6 +296,11 @@ input[type="radio"].visually-hidden {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.headline__title-link:hover,
+.headline__title-link:focus {
+    color: #ff7931;
 }
 
 .headline__description {
