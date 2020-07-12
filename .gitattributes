@@ -1,1 +1,9 @@
 *.css linguist-detectable=false
+* text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+refs/** binary

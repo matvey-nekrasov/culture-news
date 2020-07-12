@@ -1,0 +1,49 @@
+.headline {
+  text-align: center;
+
+  background: #07080D url("../img/underwater-hotel.jpg") no-repeat center;
+}
+
+.headline__title {
+  position: relative;
+
+  margin: 0;
+  padding-top: 135px;
+  padding-bottom: 130px;
+}
+
+.headline__title::before {
+  position: absolute;
+  content: "";
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 55px;
+  height: 55px;
+
+  background-image: url("../img/underwater-hotel-icon.svg");
+}
+
+.headline__title-link {
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.headline__title-link:hover,
+.headline__title-link:focus {
+  color: #ff7931;
+}
+
+.headline__description {
+  margin: 0 auto;
+  width: 456px;
+  padding-bottom: 45px;
+
+  color: #ffffff;
+  line-height: 23px;
+}
