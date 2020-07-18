@@ -100,7 +100,7 @@ const watch = () => {
 
 const publish = (cb) => {
   ghpages.publish('build', {
-    branch: 'build'
+    branch: 'gh-pages'
   }, cb);
 };
 
@@ -110,7 +110,7 @@ export const deploy = gulp.series(
   gulp.parallel(
     html
   ),
-  publish,
+  publish
 );
 
 
