@@ -1,0 +1,121 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='css/index.css')
+    title Новости культуры
+  body
+    header.header
+      .container
+        nav
+          p.header__logo.logo
+            a.logo__link Новости культуры
+          ul.header__menu.menu
+            li.menu__item
+              a.menu__link(href='#') Новости
+            li.menu__item
+              a.menu__link(href='#') Обзоры
+            li.menu__item
+              a.menu__link(href='#') Музыка
+            li.menu__item
+              a.menu__link(href='#') Архитектура
+            li.menu__item
+              a.menu__link(href='#') Кино
+            li.menu__item
+              a.menu__link(href='#') Театр
+            li.menu__item
+              a.menu__link(href='#') Литература
+            li.menu__item
+              a.menu__link(href='#') Религия
+            li.menu__item
+              a.menu__link(href='#') Живопись
+    main
+      h1.visually-hidden Новости культуры
+      section.headline
+        h2.headline__title
+          a.headline__title-link(href='#') Подводный отель
+        p.headline__description.description
+          | Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов
+          | способен
+          | воплотить в жизнь этот мегаполис, построенный на нефти и за счёт нефти
+      section.reviews
+        .container
+          h2.reviews__section-heading.section-heading Обзоры
+          ul.reviews__list
+            li.reviews__item
+              img.reviews__image(src='img/monparnasse.jpg', width='371', height='203', alt='«Шальные годы» Монпарнаса')
+              h3.reviews__inner-heading.inner-heading
+                a.reviews__link(href='#') «Шальные годы» Монпарнаса
+              p.reviews__description.description
+                | В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
+                | «Шальные годы Монпарнаса»
+            li.reviews__item
+              img.reviews__image(src='img/clay-in-the-hands.jpg', width='371', height='203', alt='Анатомия за 30 секунд')
+              h3.reviews__inner-heading.inner-heading
+                a.reviews__link(href='#') Анатомия за 30 секунд
+              p.reviews__description.description
+                | Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к
+                | научно-популярной литературе заметно вырос
+            li.reviews__item
+              img.reviews__image(src='img/spherical-eccentrics.jpg', width='371', height='203', alt='Кадр из спектакля «Чудаки и зануды»')
+              h3.reviews__inner-heading.inner-heading
+                a.reviews__link(href='#') Сферические чудаки
+              p.reviews__description.description
+                | Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на
+                | премьере
+                | спектакля «Чудаки и зануды»
+      section.promo
+        .container.container--bg-circle
+          h2.promo__section-heading.section-heading Абонементы в театр
+          ul.promo__list
+            li.promo__item
+              h3.inner-heading
+                | Скидка 50% на весь сезон 2020
+              p.promo__description.description
+                | Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей
+            li.promo__item
+              h3.inner-heading
+                | Места у сцены
+              p.promo__description.description
+                | Только для обладателей абонементов будет возможность сесть поближе к сцене
+            li.promo__item
+              h3.inner-heading
+                | Автограф-сессия актёров
+              p.promo__description.promo__description--last.description
+                | После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф
+          p.promo__button-see-container
+            a.button.button--arrow-right(href='#') Смотреть
+    footer.footer
+      .container
+        p.footer__logo.logo
+          a.logo__link.logo__link--footer Новости культуры
+        ul.footer__menu.menu.menu--border-bottom
+          li.menu__item
+            a.menu__link.menu__link--footer(href='#') Новости
+          li.menu__item
+            a.menu__link.menu__link--footer(href='#') Обзоры
+          li.menu__item
+            a.menu__link.menu__link--footer(href='#') Музыка
+          li.menu__item
+            a.menu__link.menu__link--footer(href='#') Архитектура
+          li.menu__item
+            a.menu__link.menu__link--footer(href='#') Кино
+          li.menu__item
+            a.menu__link.menu__link--footer(href='#') Театр
+          li.menu__item
+            a.menu__link.menu__link--footer(href='#') Литература
+          li.menu__item
+            a.menu__link.menu__link--footer(href='#') Религия
+          li.menu__item
+            a.menu__link.menu__link--footer(href='#') Живопись
+        ul.footer__social-list.social-list
+          li
+            a.social-list__link.social-list__link--instagram(href='#')
+              span.visually-hidden Instagram
+          li
+            a.social-list__link.social-list__link--facebook(href='#')
+              span.visually-hidden Facebook
+          li
+            a.social-list__link.social-list__link--twitter(href='#')
+              span.visually-hidden Twitter

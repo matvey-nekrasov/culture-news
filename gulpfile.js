@@ -26,6 +26,7 @@ import rename from 'gulp-rename';
 
 const clean = () => del("build");
 
+/*
 const html = () => {
   return gulp.src('src/*.html', { allowEmpty: true })
     .pipe(replace(
@@ -36,9 +37,14 @@ const html = () => {
     .pipe(gulp.dest('build'))
     .pipe(sync.stream());
 };
+*/
 
-const pug = () => {
+export const pug = () => {
   return gulp.src('src/pug/pages/**/*.pug', { allowEmpty: true })
+    .pipe(replace(
+      /(link\(rel='stylesheet', href='css\/)([\S]+)(\.css'\))/,
+      '$1$2.min$3'
+    ))
     .pipe(plumber())                 // вывод ошибок препроцессорного кода в консоль
     .pipe(gulpPug({ pretty: true }))
     .pipe(gulp.dest("build"))
@@ -90,7 +96,7 @@ const server = () => {
 };
 
 const watch = () => {
-  gulp.watch('src/*.html', gulp.series(html));
+  gulp.watch('src/pug/**/*.pug', gulp.series(pug));
   gulp.watch('src/sass/**/*.scss', gulp.series(style));
   gulp.watch([
     'src/fonts/**/*',
@@ -108,7 +114,7 @@ const publish = (cb) => {
 
 export const deploy = gulp.series(
   gulp.parallel(
-    html
+    pug
   ),
   publish
 );
@@ -125,7 +131,6 @@ export const deploy = gulp.series(
 export default gulp.series(
   clean,
   gulp.parallel(
-    html,
     pug,
     style,
     scripts,
