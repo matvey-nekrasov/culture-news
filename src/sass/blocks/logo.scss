@@ -1,0 +1,18 @@
+.logo {
+  margin: 0;
+  text-align: center;
+}
+
+.logo__link {
+  color: #000000;
+  font-family: $playfair;
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.logo__link--footer {
+  color: #ffffff;
+  font-size: 28px;
+}

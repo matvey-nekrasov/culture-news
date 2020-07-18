@@ -1,0 +1,44 @@
+.reviews {
+  text-align: center;
+}
+
+.reviews__section-heading {
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
+.reviews__list {
+  display: flex;
+
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 55px;
+
+  list-style: none;
+}
+
+.reviews__item {
+  width: 370px;
+}
+
+.reviews__inner-heading {
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+  text-align: start;
+}
+
+.reviews__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.reviews__link:hover,
+.reviews__link:focus {
+  color: #ff7931;
+}
+
+.reviews__description {
+  text-align: start;
+}

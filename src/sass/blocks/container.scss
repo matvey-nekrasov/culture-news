@@ -1,0 +1,10 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container--bg-circle {
+  --grad-perc: 54%;
+  background-image: radial-gradient(closest-corner circle, white var(--grad-perc), #f7f7f7 var(--grad-perc));
+}

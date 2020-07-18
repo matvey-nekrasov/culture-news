@@ -1,4 +1,2 @@
-help/
-refs/
-node_modules
+node_modules/
 build/
